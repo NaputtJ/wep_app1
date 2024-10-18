@@ -2,6 +2,7 @@ from app import db
 
 
 class Assessments(db.Model):
+    """assessments table model"""
     __tablename__ = "assessments"
 
     id = db.Column(db.Integer, primary_key=True)
@@ -15,6 +16,7 @@ class Assessments(db.Model):
         return f"<Assessments id={self.id}>"
 
     def serialize(self):
+        """serialize row into json compatible object"""
         return {
             "id": self.id,
             "title": self.title,
