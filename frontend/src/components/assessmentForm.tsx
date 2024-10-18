@@ -161,7 +161,9 @@ const AssessmentForm = ({
         <form>
           <Box className="flex flex-col gap-2">
             <Box className="flex justify-between">
-              <Typography aria-label={`${formState == FormState.ADD ? 'Add' : 'Update'} Assessments`}>{formState == FormState.ADD ? 'Add' : 'Update'} Assessments</Typography>
+              <Typography aria-label={`${formState == FormState.ADD ? 'Add' : 'Update'} Assessments`}>
+                {formState == FormState.ADD ? 'Add' : 'Update'} Assessments
+              </Typography>
               <a onClick={() => onClose?.()}><CloseIcon color="action" /></a>
             </Box>
             <Box className="flex flex-row gap-2">
@@ -246,10 +248,20 @@ const AssessmentForm = ({
                 )
                   : undefined
               }
-              <Button aria-label="cancel add/edit" size="small" variant="outlined" onClick={() => onClose?.()}>Cancel</Button>
-              <Button aria-label="submit add/edit" size="small" variant="contained" onClick={() => onSubmit()}>{
-                formState == FormState.ADD ? 'Add' : 'Update'
-              }</Button>
+              <Button
+                aria-label="cancel add/edit"
+                size="small"
+                variant="outlined"
+                onClick={() => onClose?.()}
+              >Cancel</Button>
+              <Button
+                aria-label="submit add/edit"
+                size="small"
+                variant="contained"
+                onClick={() => onSubmit()}
+              >{
+                  formState == FormState.ADD ? 'Add' : 'Update'
+                }</Button>
             </Box>
           </Box>
         </form>

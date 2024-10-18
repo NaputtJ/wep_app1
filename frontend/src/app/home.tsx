@@ -201,7 +201,12 @@ const HomePage = () => {
     <Box className='flex flex-col w-full h-full p-5 overflow-auto gap-2'>
       <Box className='flex justify-between items-center'>
         <Typography aria-label="Assessments">Assessments</Typography>
-        <Button aria-label="Add assessments" size="small" variant="contained" onClick={() => openFormAdd()}>add</Button>
+        <Button
+          aria-label="Add assessments"
+          size="small"
+          variant="contained"
+          onClick={() => openFormAdd()}
+        >add</Button>
       </Box>
       <Grid2
         container
