@@ -4,15 +4,13 @@ pip install flask
 pip install flask_sqlalchemy
 pip install sqlalchemy
 pip install flask_cors
+pip install flask_wtf
+pip install wtforms
 ```
 
 require node v20
 
 ### usage 
 ```console
-flask --app main run
+flask --app run run
 ```
-
-### Port
-- Frontend - http://localhost:4173/
-- backend - http://127.0.0.1:5000
