@@ -338,6 +338,9 @@ const HomePage = () => {
                 noRowsVariant: 'skeleton',
               },
             }}
+            localeText={{
+              noRowsLabel: "No assessments"
+            }}
             disableColumnFilter
             disableColumnResize
             disableRowSelectionOnClick

@@ -8,7 +8,7 @@ pip install flask_wtf
 pip install wtforms
 ```
 
-require node v20
+require node js v20
 
 ### usage 
 ```console
