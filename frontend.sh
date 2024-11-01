@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ./frontend || { echo "Directory not found"; exit 1; }
+cd ./static || { echo "Directory not found"; exit 1; }
 
 MODULE_DIR="./node_modules"
 BUILD_DIR="./dist"

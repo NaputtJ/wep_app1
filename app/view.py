@@ -111,11 +111,11 @@ def post_delete_assessments(assessment_id):
 
 @app.route('/')
 def index():
-    """get: frontend"""
-    return send_from_directory(os.path.join(os.getcwd(), 'frontend/dist/'), 'index.html')
+    """get: static"""
+    return send_from_directory(os.path.join(os.getcwd(), 'static/dist/'), 'index.html')
 
 
 @app.route('/assets/<path:path>')
 def assets(path):
     """get: js/css file"""
-    return send_from_directory(os.path.join(os.getcwd(), 'frontend/dist/assets'), path)
+    return send_from_directory(os.path.join(os.getcwd(), 'static/dist/assets'), path)
